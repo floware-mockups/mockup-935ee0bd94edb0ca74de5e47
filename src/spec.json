@@ -1,0 +1,226 @@
+{
+  "title": "Gestione delle richieste di manutenzione del verde",
+  "description": "Prototipo per registrare, filtrare e monitorare le richieste di manutenzione del verde pubblico per quartiere e priorità. Dati e organizzazioni sono inventati.",
+  "accent": "emerald",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Dashboard",
+      "description": "Panoramica delle richieste e delle attività di manutenzione.",
+      "metrics": [
+        {
+          "label": "Richieste aperte",
+          "value": "18"
+        },
+        {
+          "label": "Priorità alta",
+          "value": "4"
+        },
+        {
+          "label": "Quartieri coinvolti",
+          "value": "7"
+        },
+        {
+          "label": "Interventi completati",
+          "value": "32"
+        }
+      ],
+      "columns": [
+        "Richiesta",
+        "Quartiere",
+        "Area verde",
+        "Priorità",
+        "Stato",
+        "Data inserimento"
+      ],
+      "rows": [
+        [
+          "RV-204",
+          "Lumo",
+          "Giardino delle Vele",
+          "Alta",
+          "Da assegnare",
+          "12/06/2025"
+        ],
+        [
+          "RV-203",
+          "Nubi",
+          "Parco delle Lanterne",
+          "Media",
+          "In lavorazione",
+          "11/06/2025"
+        ],
+        [
+          "RV-202",
+          "Vela",
+          "Prato dei Sussurri",
+          "Bassa",
+          "Completata",
+          "10/06/2025"
+        ],
+        [
+          "RV-201",
+          "Bruma",
+          "Orto delle Nuvole",
+          "Alta",
+          "In lavorazione",
+          "09/06/2025"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "richieste",
+      "title": "Richieste",
+      "description": "Elenco filtrabile delle segnalazioni, ordinabile per priorità, quartiere e stato.",
+      "metrics": [
+        {
+          "label": "Totale richieste",
+          "value": "50"
+        },
+        {
+          "label": "Da assegnare",
+          "value": "9"
+        },
+        {
+          "label": "In lavorazione",
+          "value": "9"
+        }
+      ],
+      "columns": [
+        "Codice",
+        "Quartiere",
+        "Area verde",
+        "Intervento richiesto",
+        "Priorità",
+        "Stato",
+        "Data inserimento"
+      ],
+      "rows": [
+        [
+          "RV-204",
+          "Lumo",
+          "Giardino delle Vele",
+          "Potatura alberi",
+          "Alta",
+          "Da assegnare",
+          "12/06/2025"
+        ],
+        [
+          "RV-203",
+          "Nubi",
+          "Parco delle Lanterne",
+          "Riparazione irrigazione",
+          "Media",
+          "In lavorazione",
+          "11/06/2025"
+        ],
+        [
+          "RV-202",
+          "Vela",
+          "Prato dei Sussurri",
+          "Sfalcio prato",
+          "Bassa",
+          "Completata",
+          "10/06/2025"
+        ],
+        [
+          "RV-201",
+          "Bruma",
+          "Orto delle Nuvole",
+          "Rimozione ramo caduto",
+          "Alta",
+          "In lavorazione",
+          "09/06/2025"
+        ],
+        [
+          "RV-200",
+          "Tiglio",
+          "Bosco dei Rintocchi",
+          "Pulizia aiuole",
+          "Media",
+          "Da assegnare",
+          "08/06/2025"
+        ]
+      ],
+      "form": [
+        "Codice",
+        "Quartiere",
+        "Area verde",
+        "Intervento richiesto",
+        "Priorità",
+        "Stato",
+        "Data inserimento"
+      ]
+    },
+    {
+      "id": "interventi",
+      "title": "Interventi",
+      "description": "Pianifica e monitora gli interventi assegnati alle squadre inventate.",
+      "metrics": [
+        {
+          "label": "Interventi pianificati",
+          "value": "12"
+        },
+        {
+          "label": "Squadre operative",
+          "value": "5"
+        },
+        {
+          "label": "In ritardo",
+          "value": "2"
+        }
+      ],
+      "columns": [
+        "Codice intervento",
+        "Richiesta",
+        "Squadra",
+        "Quartiere",
+        "Data prevista",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "IV-088",
+          "RV-203",
+          "Squadra Limo",
+          "Nubi",
+          "14/06/2025",
+          "In corso"
+        ],
+        [
+          "IV-087",
+          "RV-201",
+          "Squadra Fronda",
+          "Bruma",
+          "13/06/2025",
+          "In corso"
+        ],
+        [
+          "IV-086",
+          "RV-198",
+          "Squadra Radura",
+          "Lumo",
+          "12/06/2025",
+          "Completato"
+        ],
+        [
+          "IV-085",
+          "RV-196",
+          "Squadra Muschio",
+          "Vela",
+          "15/06/2025",
+          "Pianificato"
+        ]
+      ],
+      "form": [
+        "Codice intervento",
+        "Richiesta",
+        "Squadra",
+        "Quartiere",
+        "Data prevista",
+        "Stato"
+      ]
+    }
+  ]
+}
